@@ -1,0 +1,174 @@
+/* =============================================
+   HW6 - Resume Site Stylesheet
+   Color Palette (Step 4b) — Dark Mode:
+   --bg:        #0F1117  (page background)
+   --surface:   #1A1D27  (section background)
+   --header:    #11131C  (header/footer bg)
+   --nav:       #1E2235  (nav bg)
+   --edu:       #162032  (education section bg)
+   --work:      #1A2420  (work experience section bg)
+   --accent:    #4F8EF7  (links / highlights)
+   --text:      #E2E4EF  (primary text)
+   --muted:     #8B8FA8  (secondary text)
+============================================= */
+
+/* ---- Base / Body ---- */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #E2E4EF;
+  background-color: #111111;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #F0F0F0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #CCCCCC;
+}
+
+p, li {
+  color: #AAAAAA;
+  line-height: 1.7;
+}
+
+/* ---- Links ---- */
+a {
+  color: #7EB3FF;
+}
+a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* ---- Header ---- */
+header {
+  background-color: #0A0A0A;
+  color: #F0F0F0;
+  padding: 48px 40px;
+  text-align: left;
+  border-bottom: 3px solid #222;
+}
+
+header p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #AAAAAA;
+}
+
+header h1 {
+  color: #FFFFFF;
+}
+
+/* ---- Nav ---- */
+nav {
+  background-color: #1A1A1A;
+  padding: 14px 40px;
+  border-bottom: 1px solid #2A2A2A;
+}
+
+nav a {
+  color: #CCCCCC;
+  text-decoration: none;
+  margin-right: 28px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+/* ---- Main ---- */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ---- Sections — alternating two-tone ---- */
+section {
+  padding: 32px 36px;
+  border-radius: 2px;
+}
+
+/* Tone 1 — slightly lighter dark grey */
+#palette,
+#projects,
+#skills {
+  background-color: #1C1C1C;
+}
+
+/* Tone 2 — deeper dark */
+#education,
+#experience,
+#future {
+  background-color: #141414;
+}
+
+/* ---- Color Palette Swatches ---- */
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.swatch {
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #333;
+  overflow: hidden;
+  font-size: 0.65rem;
+  color: #CCCCCC;
+}
+
+.swatch-block {
+  width: 100%;
+  height: 55px;
+}
+
+.swatch-label {
+  background-color: #111111;
+  padding: 5px 7px;
+  line-height: 1.6;
+}
+
+.swatch-label span {
+  display: block;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: #0A0A0A;
+  color: #555555;
+  text-align: center;
+  padding: 24px 40px;
+  font-size: 0.85rem;
+  border-top: 1px solid #222;
+}

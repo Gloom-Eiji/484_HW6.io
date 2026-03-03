@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elijah Cortez</title>
+
+  <!-- Step 5d & 7b: Google Fonts with weights 400 and 700 -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Step 3a: External stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fallback inline so preview always renders dark -->
+  <style>
+    /*
+       HW6 - Resume Site Stylesheet
+       Color Palette (Step 4b) — Dark Mode:
+       #111111  page background
+       #1C1C1C  sections (tone 1 - dark grey)
+       #141414  sections (tone 2 - near black)
+       #0A0A0A  header / footer
+       #1A1A1A  nav
+       #F0F0F0  heading text
+       #AAAAAA  body text
+       #7EB3FF  links / accent */
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: #AAAAAA;
+      background-color: #111111;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 { font-family: 'Merriweather', serif; color: #F0F0F0; }
+
+    h1 { font-size: 2.5rem; font-weight: 700; margin: 0 0 8px 0; }
+    h2 { font-size: 1.6rem; font-weight: 700; margin: 0 0 16px 0; padding-bottom: 10px; border-bottom: 1px solid #2E2E2E; }
+    h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; color: #CCCCCC; }
+
+    p, li { color: #AAAAAA; line-height: 1.7; margin: 4px 0; }
+    ul { margin: 8px 0; padding-left: 20px; }
+
+    a { color: #7EB3FF; }
+    a:hover { color: #FFFFFF; text-decoration: underline; }
+
+    /* Header */
+    header {
+      background-color: #0A0A0A;
+      color: #F0F0F0;
+      padding: 48px 48px 40px;
+      border-bottom: 2px solid #222;
+    }
+    header p { margin: 5px 0; font-size: 0.95rem; color: #AAAAAA; }
+    header h1 { color: #FFFFFF; }
+
+    /* Nav */
+    nav {
+      background-color: #1A1A1A;
+      padding: 14px 48px;
+      border-bottom: 1px solid #2A2A2A;
+    }
+    nav a {
+      color: #CCCCCC;
+      text-decoration: none;
+      margin-right: 28px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    nav a:hover { color: #FFFFFF; }
+
+    /* Main */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Sections — two-tone alternating */
+    section { padding: 32px 36px; border-radius: 2px; }
+
+    #projects, #skills  { background-color: #1C1C1C; }
+    #education, #experience, #future { background-color: #141414; }
+
+    /* Footer */
+    footer {
+      background-color: #0A0A0A;
+      color: #444444;
+      text-align: center;
+      padding: 24px 48px;
+      font-size: 0.85rem;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Elijah Cortez</h1>
+    <p>Software Engineer &nbsp;·&nbsp; Designer &nbsp;·&nbsp; Builder</p>
+    <p>West Hills, CA 91304 &nbsp;|&nbsp; (818) 836-7300 &nbsp;|&nbsp; elijahcortez2002@email.com &nbsp;|&nbsp; <a href="https://github.com/Gloom-Eiji" target="_blank">github.com/Gloom-Eiji</a></p>
+  </header>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#future">Future Scope</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div>
+        <h3>California State University Northridge</h3>
+        <p>Bachelor of Science — Computer Science</p>
+        <p>2022 — Present</p>
+      </div>
+      <br>
+      <div>
+        <h3>Los Angeles Pierce College</h3>
+        <p>Associate's Degree</p>
+        <p>2020 — 2021</p>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div>
+        <h3>Freelance Web Developer</h3>
+        <p>Self-Employed &nbsp;|&nbsp; 2021 — Present</p>
+        <ul>
+          <li>Built and maintained websites for small businesses and clients</li>
+          <li>Designed responsive layouts using HTML, CSS, and JavaScript</li>
+          <li>Collaborated with clients to meet project requirements and deadlines</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <h3>Hotel Booking Web App</h3>
+        <ul>
+          <li>Full-stack booking platform built with Flask</li>
+          <li>Interactive hotel room 3D design elements</li>
+          <li>AI-powered LLM chatbot for website integration</li>
+          <li>Backend routing, database logic, and UI design</li>
+        </ul>
+        <p>Flask | Python | LLM/AI | UI/UX | Full-Stack</p>
+      </div>
+      <br>
+      <div>
+        <h3>Campus Connect</h3>
+        <p>Student Community Hub</p>
+        <ul>
+          <li>Collaborative React + Node.js web application</li>
+          <li>Supabase backend for auth, database, and real-time data</li>
+          <li>Deployed on Vercel with custom API routes</li>
+          <li>Data-driven UX, community centric interactive design</li>
+        </ul>
+        <p>React | Node.js | Supabase | Vercel | UX Research</p>
+      </div>
+      <br>
+      <div>
+        <h3>Indie Platformer Game</h3>
+        <ul>
+          <li>Unity-based 2D platformer built with a small team</li>
+          <li>Art director and 2D asset / texture designer / animator</li>
+          <li>Gameplay systems, level design, asset integration</li>
+        </ul>
+        <p>Unity | C# | Art Direction | Level Design</p>
+      </div>
+    </section>
+
+    <!-- Future Scope -->
+    <section id="future">
+      <h2>Future Scope</h2>
+      <div>
+        <h3>CO-OP Physics Fighting Game</h3>
+        <p>Unity — Physics-driven combat systems for cooperative multiplayer.</p>
+      </div>
+      <br>
+      <div>
+        <h3>Co-op Horror Game</h3>
+        <p>Unreal Engine — Tension-focused level design and adaptive enemy AI.</p>
+      </div>
+      <br>
+      <div>
+        <h3>Martial Arts Athletic Wear</h3>
+        <p>Business Venture — AI image-to-product pipeline, international supply chain and brand development.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div><h3>Languages</h3><p>Python, JavaScript, C, C++</p></div>
+      <br>
+      <div><h3>Frameworks</h3><p>Flask, React, Node.js, Supabase</p></div>
+      <br>
+      <div><h3>Cloud &amp; DevOps</h3><p>AWS, Docker, Vercel</p></div>
+      <br>
+      <div><h3>Game &amp; Graphics</h3><p>Unity, Blender, C#</p></div>
+      <br>
+      <div><h3>Design Tools</h3><p>Photoshop, GIMP, 10+ yrs Digital Art</p></div>
+      <br>
+      <div><h3>AI / LLM</h3><p>LLM Integration, AI Deployment</p></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Elijah Cortez. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
